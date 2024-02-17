@@ -8,6 +8,7 @@ gameRoute = Blueprint("/game", __name__)
 # initializing game variables
 game = helper.initialize_game()
 
+
 # api endpoint for handling a tictactoe game move
 @gameRoute.route("/move", methods=["POST"])
 def game_move():
@@ -16,8 +17,12 @@ def game_move():
 
     # checks if game has ended --> returns failure for a new move if so
     if game["status"] == "Finished":
-            game["message"] = "Game has ended! Either reset board or leave!"
-            return jsonify(game) 
+        game["message"] = "Game has ended! Either reset board or leave!"
+        return jsonify(game)
+    # checks if game has tied --> returns failure for a new move if so
+    elif game["status"] == "Tie":
+        game["message"] = "Game has been tied! Either reset board or leave!"
+        return jsonify(game)    
     # if game hasn't ended --> checks if requested cell is empty and adds marking of currentPlayer if so
     elif game["board"][data["row"]][data["col"]] == " ":
         game["board"][data["row"]][data["col"]] = game["currentPlayer"]
@@ -43,6 +48,7 @@ def game_move():
     else:
         game["message"] = "This position is already filled!"
         return jsonify(game)
+
 
 # api endpoint for resetting the board to play a new game
 @gameRoute.route("/reset")

@@ -22,14 +22,18 @@ function App() {
   }, []);
 
   return (
-    <div className='w-full h-full bg-black'>
+    <div className='w-screen h-screen bg-green-300 flex justify-center items-center'>
       {gameStatus ? (
         <Game />
       ) : (
-        <>
-        <h1>{message}</h1>
-          <button onClick={() => setGameStatus(true)}>Play Game!</button>
-          </>
+        <div className='grid col-2 gap-5 p-5 rounded-lg bg-green-400'>
+          <h1 className='text-4xl'>{message}</h1>
+          <button
+            className='text-white text-lg p-5 rounded-lg bg-purple-400 hover:bg-white hover:text-black'
+            onClick={() => setGameStatus(true)}>
+            Play Game!
+          </button>
+        </div>
       )}
 
     </div>
