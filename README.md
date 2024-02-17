@@ -9,6 +9,7 @@ This is a simple tictactoe game that can be played anywhere with a friend!
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Future Improvements](#future-improvements)
+- [Screenshots](#screenshots)
 
 ## Getting Started
 
@@ -69,3 +70,15 @@ The game could be improved in the future in mnay ways:
 4. Adding authentication which could then lead to other features such as leaderboards, saving game results and history, and challenging friends to games
 
 All these features would improve this simple game and make it into a full game application that could be used for many other uses.
+
+# Screenshots
+
+##### Welcome Page
+****
+![alt text](./TicTacToe//images/welcomePage.png)
+![alt text](./TicTacToe//images/gameStart.png)
+![alt text](./TicTacToe//images/firstMove.png)
+![alt text](./TicTacToe//images/positionFilled.png)
+![alt text](./TicTacToe//images/tieGame.png)
+![alt text](./TicTacToe//images/xWin.png)
+![alt text](./TicTacToe//images/oWin.png)
