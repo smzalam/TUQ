@@ -4,27 +4,13 @@ This is a simple tictactoe game that can be played anywhere with a friend!
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
-- [Backend](#backend)
-- [Frontend](#frontend)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
+- [Future Improvements](#future-improvements)
 
 ## Getting Started
-
-### Prerequisites
-
-List any software, libraries, or tools that users need to have installed before they can use your project.
-
-- Python 3.x
-- Node.js
-- ...
 
 ### Installation
 
@@ -32,9 +18,9 @@ Provide step-by-step instructions on how to set up your project.
 
 1. Clone the repository:
 
-   ```bash
+```bash
     git clone https://github.com/smzalam/your-project.git
-   ```
+```
 2. Install backend dependencies
 
 ```bash
@@ -50,7 +36,9 @@ Provide step-by-step instructions on how to set up your project.
     npm install
 ```
 
-4. Using the Program
+# Usage
+
+Run the following commands:
 ```bash
     # For running backend
     cd TicTacToe/backend
@@ -62,5 +50,22 @@ Provide step-by-step instructions on how to set up your project.
     npm run dev
 ```
 
-5. Play the game!
+Play the game!
 
+# Technologies Used
+
+Flask was used for the backend to spin up a quick and simple backend API for the TicTacToe game. Blueprints were used with the API to have as much of a modular backend as possible.
+
+For the frontend, React with Tailwind CSS was used. Vite was used as the bundling and development server tool.
+React hooks such as (useEffect and useState) were used to handle state and page updates. 
+
+Axios was utilized to connect the backend and the frontend.
+
+# Future Improvements
+The game could be improved in the future in mnay ways:
+1. Adding options for the players to enter their own usernames at the start of the game 
+2. Making the game multiplayer so players on two different devices could play on the same game simultaenously
+3. Using an actual SQL database to store the gamestate, allowing for multiple games to happen at the same time
+4. Adding authentication which could then lead to other features such as leaderboards, saving game results and history, and challenging friends to games
+
+All these features would improve this simple game and make it into a full game application that could be used for many other uses.
