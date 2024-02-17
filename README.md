@@ -7,9 +7,9 @@ This is a simple tictactoe game that can be played anywhere with a friend!
 - [Getting Started](#getting-started)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshots](#screenshots)
 - [Technologies Used](#technologies-used)
 - [Future Improvements](#future-improvements)
-- [Screenshots](#screenshots)
 
 ## Getting Started
 
@@ -53,6 +53,16 @@ Run the following commands:
 
 Play the game!
 
+# Screenshots
+
+![alt text](./TicTacToe//images/welcomePage.png)
+![alt text](./TicTacToe//images/gameStart.png)
+![alt text](./TicTacToe//images/firstMove.png)
+![alt text](./TicTacToe//images/positionFilled.png)
+![alt text](./TicTacToe//images/tieGame.png)
+![alt text](./TicTacToe//images/xWin.png)
+![alt text](./TicTacToe//images/oWin.png)
+
 # Technologies Used
 
 Flask was used for the backend to spin up a quick and simple backend API for the TicTacToe game. Blueprints were used with the API to have as much of a modular backend as possible.
@@ -70,13 +80,3 @@ The game could be improved in the future in mnay ways:
 4. Adding authentication which could then lead to other features such as leaderboards, saving game results and history, and challenging friends to games
 
 All these features would improve this simple game and make it into a full game application that could be used for many other uses.
-
-# Screenshots
-
-![alt text](./TicTacToe//images/welcomePage.png)
-![alt text](./TicTacToe//images/gameStart.png)
-![alt text](./TicTacToe//images/firstMove.png)
-![alt text](./TicTacToe//images/positionFilled.png)
-![alt text](./TicTacToe//images/tieGame.png)
-![alt text](./TicTacToe//images/xWin.png)
-![alt text](./TicTacToe//images/oWin.png)
