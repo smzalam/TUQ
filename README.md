@@ -73,8 +73,6 @@ All these features would improve this simple game and make it into a full game a
 
 # Screenshots
 
-##### Welcome Page
-****
 ![alt text](./TicTacToe//images/welcomePage.png)
 ![alt text](./TicTacToe//images/gameStart.png)
 ![alt text](./TicTacToe//images/firstMove.png)
